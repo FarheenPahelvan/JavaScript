@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scientfic Calculator</title>
+	<script src="cal.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head> 
+<body>
+	<div>
+	<form name="form">
+        <h1>Scientific Calculator</h1>
+		<table class="calculator" cellspacing="0" cellpadding="1">
+		<tr>
+		<td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+		</tr>
+		<tr>
+		<td><input type="button" class="btHead" name="btndelete" value="DEL" onclick="backspace()"></td>
+        <td colspan="2"><input type="button" class="ac" name="btnAc" value="AC" onclick="c()"></td>	
+		<td><input type="button" class="btnOpps" name="btnOpps" value="&#960;" onclick="myclick('3.14159265')"></td>
+		</tr>
+		<tr>
+		<td><input type="button" class="BNum" name="b7" value="7" onclick="myclick('7')"></td>
+		<td><input type="button" class="BNum" name="b8" value="8" onclick="myclick('8')"></td>
+		<td><input type="button" class="BNum" name="b9" value="9" onclick="myclick('9')"></td>
+		<td><input type="button" class="btnOpps" name="btexp" value="Exp" onclick="exp(this.form)"></td>
+		</tr>
+		<tr>
+		<td><input type="button" class="BNum" name="b4" value="4" onclick="myclick('4')"></td>
+		<td><input type="button" class="BNum" name="b5" value="5" onclick="myclick('5')"></td>
+		<td><input type="button" class="BNum" name="b6" value="6" onclick="myclick('6')"></td>
+		<td><input type="button" class="btnOpps" name="btln" value="log" onclick="ln(this.form)"></td>
+		</tr>
+		<tr>
+		<td><input type="button" class="BNum" name="b1" value="1" onclick="myclick('1')"></td>
+		<td><input type="button" class="BNum" name="b2" value="2" onclick="myclick('2')"></td>
+		<td><input type="button" class="BNum" name="b3" value="3" onclick="myclick('3')"></td>
+		<td><input type="button" class="btnOpps" name="btsqrt" value="&radic;" onclick="sqrt(this.form)"></td>
+		</tr>
+		<tr>
+		<td><input type="button" class="BNum" name="btzero" value="0" onclick="myclick('0')"></td>
+		<td><input type="button" class="BNum" name="bttwozero" value="00" onclick="myclick('00')"></td>
+		<td><input type="button" class="BNum" name="btpoint" value="." onclick="myclick('.')"></td>
+		<td><input type="button" class="btnOpps" name="btsqr" value="^2" onclick="square(this.form)"></td>
+		</tr>
+		<tr>
+		<td><input type="button" class="BMath" name="btadd" value="+" onclick="myclick('+')"></td>
+		<td><input type="button" class="BMath" name="btsub" value="-" onclick="myclick('-')"></td>
+		<td><input type="button" class="BMath" name="btmul" value="*" onclick="myclick('*')"></td>
+		<td><input type="button" class="BMath" name="btdiv" value="/" onclick="myclick('/')"></td>
+		</tr>
+		<tr>
+		<td><input type="button" class="BMath" name="btsin" value="sin" onclick="sin(this.form)"></td>
+		<td><input type="button" class="BMath" name="btcos" value="cos" onclick="cos(this.form)"></td>
+		<td><input type="button" class="BMath" name="bttan" value="tan" onclick="tan(this.form)"></td>
+		<td><input type="button" class="BMath" name="btper" value="%" onclick="percent(this.form)"></td>
+		</tr>
+        <tr>
+            <td><input type="button" class="BMath" name="openBracket" value="(" onclick="myclick('(')"></td>
+            <td><input type="button" class="BMath" name="closeBracket" value=")" onclick="myclick(')')"></td>
+            <td colspan="2"><input type="button" class="equal" name="btnequalto" value="=" onclick="equal()"></td>
+        </tr>
+	</table>
+</form>
+
+</div>
+<div>
+		<footer>
+		</footer>
+		</div>	
+</body>
+</html>

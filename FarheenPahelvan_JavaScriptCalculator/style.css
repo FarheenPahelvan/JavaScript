@@ -1,0 +1,91 @@
+* {
+padding: 0px;
+margin: 5px;
+text-align: center;
+box-sizing: border-box;
+}
+body {
+background-image: url("background.jpg");
+background-repeat: no-repeat;
+margin-top: 50PX;
+margin-left: 30px;
+display: block;
+}
+h1{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-align: left;
+    padding-left: 10px;
+    padding-left: 20px;
+}
+.calculator {
+width: 400px;
+height: 390px;
+background-color: #c0c0c0;
+box-shadow: 0px 0px 0px 10px #666;
+border: 5px solid black;
+border-radius: 10px;
+margin-left: 500px;
+}
+#display {
+width: 360px;
+height: 50px;
+text-align: right;
+background-color: black;
+border: 3px solid white;
+font-size: 18px;
+left: 2px;
+top: 2px;
+color: #7fff00;
+}
+.btHead{
+color: white;
+background-color: gray;
+font-size: 14px;
+margin: auto;
+width: 60px;
+height: 30px;
+}
+.BNum {
+color: white;
+background-color: black;
+font-size: 14px;
+margin: auto;
+width: 60px;
+height: 30px;
+}
+.BMath {
+color: white;
+background-color: #ff4561;
+font-size: 14px;
+margin: auto;
+width: 60px;
+height: 30px;
+}
+.btnOpps {
+color: white;
+background-color: #ff9933;
+font-size: 14px;
+margin: auto;
+width: 60px;
+height: 30px;
+}
+.equal{
+background-color: grey;
+color: white;
+font-size: 14px;
+margin: auto;
+width: 100px;
+height: 30px;
+}
+.ac{
+align-content: center;
+background-color: grey;
+color: white;
+font-size: 14px;
+margin: auto;
+width: 100px;
+height: 30px;
+}
