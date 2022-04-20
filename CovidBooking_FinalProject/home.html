@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="images/star1.jpg" height="80px"></a>
+        <nav>
+            <img src="images/step1.png" height="60px">
+        </nav>
+    </header>
+    <main id="firstmain">
+        <div id="bimg"></div>
+        <div id="registrationForm">
+            <h2>Registration Form</h2>
+            Patient name<span class="red">*</span> : <span id="p_name_error"></span><input type="text" placeholder="Enter patient name" id="p_name">
+            
+            Father name<span class="red">*</span> : <span id="g_name_error"></span><input type="text" placeholder="Enter father name" id="g_name">
+            
+            Patient Age<span class="red">*</span> : <span id="p_age_error"></span><input type="text" placeholder="Enter patient age" id="p_age">
+            
+            Gender<span class="red">*</span>: <input type="radio" id="p_gender" name="gender" value="Male" checked>
+              <label for="male">Male</label>
+              <input type="radio" id="p_gender" name="gender" value="Female">
+              <label for="female">Female</label><br><br>
+            
+            Phone no<span class="red">*</span> : <span id="g_number_error"></span><input type="text" placeholder="Enter parent contact no" id="g_number">
+            
+            <input type="button" id="submit_button" value="Submit">
+            <input type="button" id="retrieve_button" value="Retrieve Booking">
+        </div>
+    </main>
+    <footer class="homef">
+       &copy; Copyrights 2020 @ FarheenPahelvan
+    </footer>
+    </body>
+</html>
