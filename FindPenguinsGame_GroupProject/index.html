@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!--        <title>Find Penguins Game</title>-->
+        <meta charset="utf-8">
+        
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+  <link href="index.css" attribute="type/css" rel="stylesheet">
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+  
+function playAudio1() {
+   var audio1 = document.getElementById("audioID1");
+  audio1.play();
+}
+
+function playAudio2() {
+   var audio2 = document.getElementById("audioID2");
+  audio2.play();
+}
+
+  </script>
+  
+</head>
+<body>
+	<div id="container">
+    <div id="title">
+    </div>
+    <p>Score: <a id="Score">0</a></p>
+    <p>Highest_Score: <a id="Highest_Score">0</a></p>
+    <button class="btn" onclick="reset()" >Reset</button> 
+ 
+  </div>
+ 
+  <div id="gameContainer">
+    
+    <a href="#" onclick="playAudio1()"><div id="pngn1"></div></a>
+    <a href="#" onclick="playAudio1()"><div id="pngn2"></div></a>
+    <a href="#" onclick="playAudio1()"><div id="pngn3"></div></a>
+    <a href="#" onclick="playAudio1()"><div id="pngn4"></div></a>
+    <a href="#" onclick="playAudio1()"><div id="pngn5"></div></a>
+    <a href="#" onclick="playAudio1()"><div id="pngn6"></div></a>
+    <a href="#" onclick="playAudio1()"><div id="pngn7"></div></a>
+    <a href="#" onclick="playAudio1()"><div id="pngn8"></div></a>
+    <a href="#" onclick="playAudio2()"><div id="yeti"></div></a>
+  </div>
+
+<audio id="audioID1">
+  <source src="squawks.mp3" type="audio/ogg">
+  <source src="squawks.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<audio id="audioID2">
+  <source src="roars.wav" type="audio/ogg">
+  <source src="roars.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</body>
+</html>
