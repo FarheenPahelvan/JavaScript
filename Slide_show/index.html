@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="slide_show.js"></script>
+</head>
+
+<body onload = runSlide>
+<section>
+    <h1>Fishing Slide Show</h1>
+    <ul id="image_list">
+        <li><a href="images/casting1.jpg" title="Casting on the Upper Kings"></a></li>
+        <li><a href="images/casting2.jpg" title="Casting on the Lower Kings"></a></li>
+        <li><a href="images/catchrelease.jpg" title="Catch and Release on the Big Horn"></a></li>
+        <li><a href="images/fish.jpg" title="Catching on the South Fork"></a></li>
+        <li><a href="images/lures.jpg" title="The Lures for Catching"></a></li>
+    </ul>
+    <h2 id="caption">Casting on the Upper Kings</h2>
+    <p>
+    	<img src="images/casting1.jpg" alt="" id="image">
+    </p>
+    <script>
+        
+        function slide() {
+            imageCounter = 0;
+            document.getElementById("start").src = slide.href;
+            
+            imageCounter = (imageCounter + 1)% imageCounter.length;
+        }
+        function setTimer(){
+            if (timer) {
+            clearInterval( timer );
+            timer=null;
+        }
+        else {
+            timer = setInterval("slide()",1000);
+        }
+            
+    }
+        
+    </script>
+            <label for="start_button"></label>
+            <input type="button" name="" value="Start" onclick="runSlide();"/>
+            <label for="end_button"></label>
+            <input type="button" name="" value="Stop" onclick="runSlide('Stop');"/>
+</section>
+</body>
+</html>
