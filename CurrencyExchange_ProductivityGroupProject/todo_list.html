@@ -1,0 +1,41 @@
+<!--
+This Web Application was developed by Farheen Pahelvan
+For JavaScript Group Project
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student To-do List</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/todo_list.js"></script>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+          <li><a href="stu-loan.html">Loan Calculator</a></li>
+          <li><a href="todo_list.html">To-do List</a></li>
+          <li><a href="currency-exchange.html">Currency Converter</a></li>
+          <li id="right_title"><a href="home.html"> International Student Helper Applications</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <div id="todolist">
+            <h2>Student To-do List</h2><br>
+            <input type="text" placeholder="Enter your task" id="add_task">
+            <input type="button" id="add_button" value="Add Task">
+            <input type="button" id="save_button" value="Save Task" style="display: none">
+            <button type="button" id="delete_all_button">Delete All</button>
+            <input type="hidden" id="save_index">
+            <table id="add_task_list">
+            </table>
+        </div>
+    </main>
+    <footer>
+        &copy; Copyrights 2020 | Parth Meshwa and Farheen
+    </footer>
+    </body>
+</html>

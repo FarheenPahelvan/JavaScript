@@ -1,0 +1,68 @@
+<!--
+This Web Application was developed by Parth Shah.
+For JavaScript Group Project
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Loan Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/stu-loan.js"></script>
+    
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+          <li><a href="stu-loan.html">Loan Calculator</a></li>
+          <li><a href="todo_list.html">To-do List</a></li>
+          <li><a href="currency-exchange.html">Currency Converter</a></li>
+          <li id="right_title"><a href="home.html"> International Student Helper Applications</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+    <div id="todolist">
+    <h2>Student Loan Calculator</h2>
+    <br>
+    <form name="stuloan" method="POST" id="stuloan">
+        <table>
+            
+          
+            <tr>
+                <td>Total Amount Of Student Loan</td>
+                <td><input type="text" name="amt" id="amt" placeholder="Enter amount in $"><div id="e1"></div></td>
+                           
+            </tr>
+            <tr>
+                <td>Rate of Interest</td>
+                <td><input type="text" name="int" id="int" placeholder="Enter % of rate"><div id="e2"></div></td>
+                
+            </tr>
+            <tr>
+                <td>Loan Period in Months</td>
+                <td><input type="text" name="timemo" id="timemo" placeholder="Enter no. of months"><div id="e3"></div></td>
+            
+            </tr>
+            <tr>
+                <td>Your Monthly Installment</td>
+                <td><input type="text" name="monthlyin" id="monthlyin" disabled></td>
+            </tr>
+            <tr>
+                <td><button type="button" onClick="calcint()" value="Check" id="add_button">Check</button></td>
+                <td><button type="reset" value="Reset" id="delete_all_button" onclick="resetbtn()">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</main>
+    <footer>
+        &copy; Copyrights 2020 | Parth Meshwa and Farheen
+    </footer>
+    </body>
+</html>

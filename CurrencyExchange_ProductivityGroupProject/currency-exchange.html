@@ -1,0 +1,54 @@
+<!--
+This Web Application was developed by Meshwa Patel.
+For JavaScript Group Project
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/currency-exchange.js"></script>
+    <title>Currency Exchange</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+              <li><a href="stu-loan.html">Loan Calculator</a></li>
+              <li><a href="todo_list.html">To-do List</a></li>
+              <li><a href="currency-exchange.html">Currency Converter</a></li>
+              <li id="right_title"><a href="home.html"> International Student Helper Applications</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="currency-exchange">
+            <h2>Currency Exchange</h2>
+            <br>
+            <div>
+                <select name="from-currency" id="from-currency">
+                    <option value="INR">Indian Rupee</option>
+                    <option value="IRR">Iranian Rial</option>
+                    <option value="ZAR">South African Rand</option>
+                    <option value="TWD">New Taiwan Dollar</option>
+                    <option value="USD">U.S. Dollar</option>
+                </select>
+                <span class="interchange">&#8644;</span>
+                <input type="text" value="Canadian Dollar" disabled><br>
+                <input type="number" id="from-currency-value">
+                <span class="interchange"></span>
+                <input type="text" id="to-currency-value" disabled>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+       &copy; Copyrights 2020 | Parth Meshwa and Farheen
+    </footer>
+    
+</body>
+</html>
